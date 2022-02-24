@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Rank {% endblock title %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col md-12">
+      <div class="bg-light pt-1 px-3">
+        <h2><b>Adverisements</b> Listed by Price
+          <a href="/" class="btn btn-dark float-end mx-1">Home</a>
+        </h2>
+        <table class="table table-hover table-striped align-middle">
+          <tr class="text-center">
+            <th>Rank</th>
+            <th>Unique ID</th>
+            <th>Subject</th>
+            <th>Body</th>
+            <th>Price</th>
+            <th>Email</th>
+            
+          </tr>
+          {% for ad in ads %}
+          <tr class="text-center">
+            <td>{{ad.rank}}</td>
+            <td>{{ad.uid}}</td>
+            <td>{{ad.subject}}</td>
+            <td>{{ad.body}}</td>
+            <td>{{ad.price}}</td>
+            <td>{{ad.email}}</td>
+          </tr>
+         {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
