@@ -7,11 +7,11 @@
 3.Database Sqlite3
 
 #### Features:
-1. Add Advertisemnt
-2. Delete Advertisemnt
-3. Search Advertisemnt
-4. Edit Advertisemnt
-5. Sort Advertisemnt on Price
+1. Add Advertisement
+2. Delete Advertisement
+3. Search Advertisement
+4. Edit Advertisement
+5. Sort Advertisement on Price
 
 
 ### Steps to get started
